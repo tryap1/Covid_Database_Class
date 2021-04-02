@@ -2,25 +2,25 @@
 Simple Covid Project For Data Analytics Students
 
 
-Class outline for students:
+## Class outline for students:
 
-*Database Prep*
+### Database Prep
 Create a database locally in their personal computer
 Load it up manually everyday with new covid statistics pulled from Johns Hopkins' github
 
-*SQL*
+### SQL
 Students will eventually have their own database of covid data to practice SQL querries
 
-*Data Wrangling*
+### Data Wrangling
 Students can eventually extract information from their own database, perform transformations, joins and analysis on covid data
 
-*Data Visualisation*
+### Data Visualisation
 Students can use transformed data to create visualisations to tell a story and show insights
 
-*Mini Data Project Lifecycle*
+### Mini Data Project Lifecycle
 Revise the entire project, automating it as much as possible so that standard tasks can be performed automatically at any given time
 
-*Getting Started*
+# Getting Started
 Set up your database -> The python scripts provided are meant for a local mariadb instance. You'll need to make minor changes to the code to suit your personal needs
 Create a database in your mariadb instance called covid (case sensitive)
 
