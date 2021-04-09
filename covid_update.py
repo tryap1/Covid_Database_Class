@@ -57,8 +57,8 @@ df_cases_daily = df_cases_final[condition_cases]
 df_death_daily = df_death_final[condition_death]
 df_recov_daily = df_recov_final[condition_recov]
 
-df_cases_daily.to_sql('Total_Confirmed_Cases', db_connection, if_exists = 'append', index = False)
-df_death_daily.to_sql('Total_Deaths', db_connection, if_exists = 'append', index = False)
-df_recov_daily.to_sql('Total_Recoveries', db_connection, if_exists = 'append', index = False)
+df_cases_daily.to_sql('total_confirmed_cases', db_connection, if_exists = 'append', index = False)
+df_death_daily.to_sql('total_deaths', db_connection, if_exists = 'append', index = False)
+df_recov_daily.to_sql('total_recoveries', db_connection, if_exists = 'append', index = False)
 
 db_connection.dispose()
