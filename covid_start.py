@@ -47,8 +47,8 @@ df_recov_final['Date'] = pd.to_datetime(df_recov_final['Date'])
 db_url = 'mysql+pymysql://root:password@localhost:3306/'+'covid'+'?charset=utf8'
 db_connection = sqlalchemy.create_engine(db_url)
 
-df_cases_final.to_sql('Total_Confirmed_Cases', db_connection, if_exists = 'append', index = False)
-df_death_final.to_sql('Total_Deaths', db_connection, if_exists = 'append', index = False)
-df_recov_final.to_sql('Total_Recoveries', db_connection, if_exists = 'append', index = False)
+df_cases_final.to_sql('total_confirmed_cases', db_connection, if_exists = 'append', index = False)
+df_death_final.to_sql('total_deaths', db_connection, if_exists = 'append', index = False)
+df_recov_final.to_sql('total_recoveries', db_connection, if_exists = 'append', index = False)
 
 db_connection.dispose()
